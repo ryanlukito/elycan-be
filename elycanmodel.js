@@ -8,15 +8,15 @@ const elycanmodel = db.define(
             type: DataTypes.DATE,
             defaultValue: Sequelize.NOW,
         },
-        temperature:{
+        kecepatan:{
             type: DataTypes.FLOAT,
             allowNull: false,
             validate: {
                 notEmpty: true,
             },
         },
-        humidity:{
-            type: DataTypes.FLOAT,
+        arah:{
+            type: DataTypes.INTEGER,
             allowNull: false,
             validate: {
                 notEmpty: true,
